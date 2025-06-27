@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f8f4935436.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><a href="#header">Jan.</a></h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tools">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="split-text-container"><span class="text-part left">HEY</span> <span class="text-part right">THERE!</span></div>
+                <h2>I'm <span>Jan</span></h2>
+                <div class="typewriter anim-fade-in">
+                    <p>I'm a Full Stack Web Developer</p>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- about page -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <p>Hi!👋 Nice to meet you! Please take a look around!</p>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My full name is Jan Daniele Tan. I spent the last two years in full stack development going through highly recommended online courses and bootcamps and building an array of personal projects some of which you'll see on My Works page. I enjoy programming at either end of the tech stack whether it be designing data models or optimizing database queries.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Design</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Back End Design</span><br>Utilizing databases (Both SQL and NoSQL)</li>
+                            <li><span>Full Stack Development</span><br>Combining front-end with back-end with the use of either private or public APIs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2024</span><br>Self-employed - Business Owner</li>
+                            <li><span>2019-2021</span><br>Property Engineer at Ayala Property Management Corp.</li>
+                            <li><span>2018</span><br>Intern at Petron Bataan Refinery</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>June 2025</span><br>Full-Stack Web Development Bootcamp at Udemy (by Dr. Angela Yu)</li>
+                            <li><span>2024-2025</span><br>Private Pilot License Course at First Aviation Academy</li>
+                            <li><span>February 2024</span><br>Full-Stack Web Development Course at Zuitt Coding Bootcamp</li>
+                            <li><span>September 2018</span><br>Registered Electrical Engineer (PRC License)</li>
+                            <li><span>June 2018</span><br>BS in Electrical Engineering at University of the Philippines Los Baños</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- Skills -->
+    <div id="tools">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>HTML</h2>
+                    <img src="./images/html.png" alt="html_icon">
+                </div>
+
+                <div>
+                    <h2>CSS</h2>
+                    <img src="./images/css.png" alt="css_icon">
+                </div>
+
+                <div>
+                    <h2>JavaScript</h2>
+                    <img src="./images/javascript.png" alt="js_icon">
+                </div>
+
+                <div>
+                    <h2>Express</h2>
+                    <img src="./images/express.png" alt="ex_icon">
+                </div>
+
+                <div>
+                    <h2>React</h2>
+                    <img src="./images/react.png" alt="react_icon">
+                </div>
+
+                <div>
+                    <h2>Node</h2>
+                    <img src="./images/node.png" alt="node_icon">
+                </div>
+
+                <div>
+                    <h2>Github</h2>
+                    <img src="./images/github.png" alt="git_icon">
+                </div>
+
+                <div>
+                    <h2>MongoDB</h2>
+                    <img src="./images/mongo.png" alt="mongo_icon">
+                </div>
+
+                <div>
+                    <h2>PostgreSQL</h2>
+                    <img src="./images/postgresql.png" alt="postg_icon">
+                </div>
+                
+                <div>
+                    <h2>MySQL</h2>
+                    <img src="./images/msql-logo.png" alt="msql_icon">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- My Work -->
+     <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/food-del-ss.png" alt="food_del">
+                    <div class="layer">
+                        <h3>Food Delivery Website</h3>
+                        <p>A dynamic food delivery website where users can add their choice of food to their own cart for delivery. Food check-out and payment has been made safe and hassle-free thru Stripe. With the use of the admin functionality, business owners can easily track and update orders, and add and remove products from their menu.</p>
+                        <a class="demo" href="https://food-del-1fuq.onrender.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a class="code" href="https://github.com/jdjtan01/food-del.git" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                        
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/clothing-ss.png" alt="food_del">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>A dynamic e-commerce platform tailored for clothing businesses, allowing them to showcase and sell their products online. With a user-friendly shopping cart, both business owners and customers can easily manage selected items. The platform also features secure, hassle-free payment processing to ensure a smooth and trustworthy checkout experience. Made using ReactJS.</p>
+                        <a class="demo" href="https://ecommerce-beta-six-77.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a class="code" href="https://gitlab.com/jdjtan/ecommerce" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/mern-blog-ss.png" alt="food_del">
+                    <div class="layer">
+                        <h3>MyBlog (A blog site)</h3>
+                        <p>A blog website with backend and frontend, built using MERN stack. Each user can make and edit their own post/s. Backend is build with Express, Node, and MongoDB, frontend is made using React. Deployed on Render.com.</p>
+                        <a class="demo" href="https://mern-blog-frontend-vq51.onrender.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a class="code" href="https://github.com/jdjtan01/mern-blog.git" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/your-book-ss.png" alt="food_del">
+                    <div class="layer">
+                        <h3>Your Book (Book Catalog)</h3>
+                        <p>Search books by title, author, or subject. You can also be redirected to the book's page in the OpenLibrary website to see more details. Made using Vite React and using the OpenLibrary API.</p>
+                        <a class="demo" href="https://jdjtan01.github.io/book-search/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a class="code" href="https://github.com/jdjtan01/book-search.git" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/keeper-app-ss.png" alt="food_del">
+                    <div class="layer">
+                        <h3>Keeper (A notes taking app)</h3>
+                        <p>Keeper is a similar app to Google's note taking app "Google Keep" where users can list their notes to be remembered and done in their leisure. Made using Vite React.</p>
+                        <a class="demo" href="https://jdjtan01.github.io/keeper-app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/jdjtan01/keeper-app.git" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/simon-game.png" alt="food_del">
+                    <div class="layer">
+                        <h3>The Simon Game</h3>
+                        <p>The Simon game is an electronic memory game where players repeat sequences of flashing lights and tones. This game is made purely of HTML, CSS, and Javascript to demonstrate proficiency and flexibility with using said methods. Sound on 🔊</p>
+                        <a class="demo" href="https://jdjtan01.github.io/The-Simon-Game/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a class="code" href="https://github.com/jdjtan01/The-Simon-Game.git" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> jdjtan01@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +63 906 471 5495</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jdjtan01" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://gitlab.com/jdjtan" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
+                    </div>
+                    <a href="./images/RESUME_TAN.pdf" download target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz3ca5WcDc_gf1myPjMSBsAeStK1tbRQwhCIOZjckCeKD2KlePZMNG98rPH-Aqh9KNg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Your message has been sent!"
+        setTimeout(function() {
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
