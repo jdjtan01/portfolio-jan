@@ -89,6 +89,10 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 
+.logo h1 a span {
+    color: #ff004f;
+}
+
 /* Hey There CSS */
   .split-text-container {
     display: flex;
