@@ -374,6 +374,8 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
+
+
 .work:hover img{
     transform: scale(1.1);
 }
@@ -393,6 +395,17 @@ nav ul li a:hover::after{
     border: none;
     cursor: pointer;
     font-size: 30px;
+}
+
+.layer.food-del h3{
+    padding-top: 30px;
+}
+
+.layer .admin button{
+    left: 80px;
+    bottom: 85px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 
