@@ -596,6 +596,8 @@ nav .fa-solid {
     .layer h3 {
         margin-top: 40px;
         font-size: 22px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
     }
     .layer p {
         display: none;
